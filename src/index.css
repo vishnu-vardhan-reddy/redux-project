@@ -77,7 +77,7 @@ header a {
 
 /* #products */
 
-.products > ul {
+.products ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -88,7 +88,6 @@ header a {
 }
 
 .products li {
-  flex: 1 1 29rem;
   height: 47rem;
   padding: 1rem;
   margin: 1rem;
@@ -97,7 +96,7 @@ header a {
 .product {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   height: 100%;
 }
 
@@ -140,4 +139,81 @@ header a {
 a {
   text-decoration: none;
   color: #203040;
+}
+
+/* Filter */
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  padding: 1rem;
+  border-bottom: 0.1rem solid #c0c0c0;
+}
+
+.filter div {
+  flex: 1;
+}
+
+select {
+  padding: 0px 10px;
+  outline-width: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Cart */
+
+.cart {
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.cart-header {
+  border-bottom: 0.1rem solid #c0c0c0;
+}
+
+.cart-items {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+}
+
+.cart-items img {
+  width: 5rem;
+}
+
+.cart-items li {
+  display: flex;
+}
+
+.cart-items li div {
+  padding: 0.5rem;
+}
+
+.cart-items li div:last-child {
+  flex: 1;
+}
+
+.right {
+  text-align: right;
+}
+
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.total > div {
+  font-size: 2rem;
+}
+
+.total div,
+.total > button {
+  flex: 1;
 }
